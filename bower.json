@@ -1,6 +1,6 @@
 {
   "name": "ng-easy-translate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": ["dist/ng-easy-translate.min.js"],
   "description": "AngularJS translation module",
   "authors": [
@@ -9,6 +9,7 @@
   "ignore": [
     "bower_components",
     "node_modules",
+    "example",
     "spec",
     "package.json",
     "GULPFILE.js"

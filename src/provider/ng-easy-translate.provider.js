@@ -17,19 +17,21 @@ angular
                 dictPath = path;
             };
 
-            this.$get =  ['$rootScope', '$window', '$http', function ($rootScope, $window, $http) {
+            this.$get =  ['$rootScope', '$window', '$http', '$q', function ($rootScope, $window, $http, $q) {
                 return {
                     getBrowserLanguage: function () {
                         return $window.navigator.language.toLowerCase().substring(0, 2);
                     },
                     setActiveLanguage: function (locale) {
+                        var oldActive = activeLanguage;
+
                         if (locale === activeLanguage) {
-                            return;
+                            return $q.resolve(activeDictionary);
                         }
                         // set default language
                         if (languages.indexOf(locale) === -1) {
                             activeLanguage = languages[0];
-                            return;
+                            return $q.reject('Unknown locale: ' + locale);
                         } else {
                             activeLanguage = locale;
                         }
@@ -44,9 +46,10 @@ angular
 
                                 return activeDictionary;
                             }, function (err) {
+                                activeLanguage = oldActive;
                                 console.error('Can not request dictionary', err);
 
-                                return err;
+                                return $q.reject(err);
                             });
                     },
                     getActiveLanguage: function () {

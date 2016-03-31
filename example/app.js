@@ -20,12 +20,14 @@ angular
     .controller('AppCtrl', [
         '$scope',
         '$timeout',
+        '$filter',
         '$easyTranslate',
-        function ($scope, $timeout, $easyTranslate) {
+        function ($scope, $timeout, $filter, $easyTranslate) {
             var locale = 'de';
 
             $timeout(function () {
                 $scope.dict = $easyTranslate.getActiveDictionary();
+                console.log('Translation for "hey":', $filter('translate')('hey'));
             }, 300);
 
             $scope.switch = function () {
@@ -36,6 +38,7 @@ angular
                 }
 
                 $easyTranslate.setActiveLanguage(locale).then(function (dict) {
+                    console.log('Translation for "hey":', $filter('translate')('hey'));
                     $scope.dict = dict;
                 });
             };
