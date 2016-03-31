@@ -1,0 +1,28 @@
+{
+  "name": "ng-easy-translate",
+  "version": "0.0.1",
+  "main": ["dist/ng-easy-translate.min.js"],
+  "description": "AngularJS translation module",
+  "authors": [
+    "Bengt Weiße <bengtler@gmail.com>"
+  ],
+  "ignore": [
+    "bower_components",
+    "node_modules",
+    "spec",
+    "package.json",
+    "GULPFILE.js"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3"
+  },
+  "keywords": [
+    "angular",
+    "ng",
+    "angularjs",
+    "translate",
+    "translation",
+    "i18n"
+  ],
+  "license": "MIT"
+}

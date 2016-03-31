@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="//code.angularjs.org/1.5.3/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.5.3/angular-route.min.js"></script>
+        <script type="text/javascript" src="../dist/ng-easy-translate.min.js"></script>
+        <script src="app.js">
+        </script>
+        <title>test ngEasyTranslate</title>
+    </head>
+    <body ng-app="myApp" stric-di="true" ng-controller="AppCtrl">
+        <b>Simple Key</b>
+        <br>
+        {{'hey' | translate}}
+        <br>
+        <b>Nested Key</b>
+        <br>
+        {{'nested.test' | translate}}
+        <br>
+        <b>List item</b>
+        <br>
+        {{'list[0]' | translate}}
+        <br><br><br>
+        <b>dict file</b>
+
+        <button ng-click="switch()">Switch language</button>
+
+        <pre><code>{{dict}}</code></pre>
+    </body>
+</html>

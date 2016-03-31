@@ -1,0 +1,9 @@
+{
+    "hey": "Hi dudes",
+    "nested": {
+        "test": "Testobject"
+    },
+    "list": [
+        "Woooooaaahh"
+    ]
+}

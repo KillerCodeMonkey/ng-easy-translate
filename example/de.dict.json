@@ -1,0 +1,9 @@
+{
+    "hey": "Huhu Leute",
+    "nested": {
+        "test": "Testobjekt"
+    },
+    "list": [
+        "Woooooaaahh"
+    ]
+}
