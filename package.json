@@ -1,6 +1,6 @@
 {
   "name": "ng-easy-translate",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "AngularJS translation module",
   "author": "Bengt Weiße <bengtler@gmail.com>",
   "contributors": [
