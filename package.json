@@ -17,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/XXXX"
+    "url": "https://github.com/KillerCodeMonkey/ng-easy-translate"
   },
   "bugs": {
-    "url": "XXXX"
+    "url": "https://github.com/KillerCodeMonkey/ng-easy-translate/issues"
   },
   "keywords": [
     "angular",
