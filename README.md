@@ -1,7 +1,7 @@
 # ng-easy-translate
 Simple translate module for AngularJS 1.x working with static json files. It uses 2-char locales for simplification, e.g. 'de', 'en', 'ru', ...
 
-Take a look at this little github page for a working example.
+Take a look at this [little github page](http://killercodemonkey.github.io/ng-easy-translate/example/index.html "Little demo") for a working example.
 
 ## Installation
 
