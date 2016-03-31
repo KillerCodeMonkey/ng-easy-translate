@@ -49,7 +49,7 @@ angular
                                 activeLanguage = oldActive;
                                 console.error('Can not request dictionary', err);
 
-                                return err;
+                                return $q.reject(err);
                             });
                     },
                     getActiveLanguage: function () {
